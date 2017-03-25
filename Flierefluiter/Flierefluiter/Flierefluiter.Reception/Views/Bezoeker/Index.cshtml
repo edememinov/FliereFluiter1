@@ -1,0 +1,75 @@
+﻿@using Flierefluiter.WebUI.Models
+@model ReserveringModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (ViewBag.Message != null)
+{
+    <script>
+
+$(document).ready(function(){
+
+alert('@ViewBag.Message');
+
+});
+
+    </script>
+
+}
+<h2>Reservering toevoegen</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.Naam, "Volledige Naam", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.Naam)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.Email, "Email", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.Email)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.Telnr, "Telefoonnummer", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.Telnr)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.BeginDatum, "Datum Aankomst", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.BeginDatum)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.EindDatum, "Datum Vertrek", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.EindDatum)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.AantalPersonen, "Aantal personen", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Reservering.AantalPersonen)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Reservering.PlaatsId, "Veld", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.Reservering.VeldID, new SelectList (Model.Velden, "VeldId", "Naam"),"-Selecteer het gewenste Veld-")
+        </div>
+    </div>
+
+    <p>
+        <button type="submit">Reserveren</button>
+    </p>
+}

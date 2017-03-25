@@ -1,0 +1,18 @@
+﻿@using Flierefluiter.Domain.Entities;
+@model Boeking
+
+@{
+    ViewBag.Title = "Veld";
+}
+
+<h2>Registreren</h2>
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">Log In</button>
+    </p>
+}

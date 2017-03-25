@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Flierefluiter",
+      "appliesTo": "Flierefluiter/Flierefluiter.WebUI/",
+      "type": "command"
+    },
+    {
+      "taskName": "task-Flierefluiter",
+      "appliesTo": "Flierefluiter/",
+      "type": "command"
+    }
+  ]
+}
