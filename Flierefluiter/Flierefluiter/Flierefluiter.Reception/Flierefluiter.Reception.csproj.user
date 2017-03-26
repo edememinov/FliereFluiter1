@@ -7,6 +7,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <UseIISExpress>true</UseIISExpress>
+    <WebStackScaffolding_DbContextTypeFullName>Flierefluiter.Domain.Concrete.DefaultConnection</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

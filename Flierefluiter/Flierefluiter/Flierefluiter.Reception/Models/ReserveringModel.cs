@@ -6,7 +6,7 @@ using Flierefluiter.Domain.Entities;
 using Flierefluiter.Domain.Abstract;
 using Flierefluiter.Domain.Concrete;
 
-namespace Flierefluiter.WebUI.Models
+namespace Flierefluiter.Reception.Models
 {
     public class ReserveringModel
     {

@@ -92,3 +92,4 @@ C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\F
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.dll
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.pdb
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.csprojResolveAssemblyReference.cache

@@ -2,6 +2,7 @@
 using Flierefluiter.Domain.Abstract;
 using Flierefluiter.Domain.Entities;
 using Flierefluiter.Domain.Concrete;
+using Flierefluiter.Reception.Models;
 
 namespace Flierefluiter.Reception.Controllers
 {
@@ -14,6 +15,16 @@ namespace Flierefluiter.Reception.Controllers
         public BoekingController(IFlierefluiterRepository repository)
         {
             this.repository = repository;
+        }
+
+        [Authorize]
+        // GET: Home
+        [HttpGet]
+        public ActionResult ReserveringList(BoekingViewModel boekingen)
+        {
+            boekingen.Resveringens = repository.Reserverings;
+
+            return View(boekingen);
         }
 
         [Authorize]

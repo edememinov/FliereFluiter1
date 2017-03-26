@@ -8,7 +8,6 @@ using Flierefluiter.Domain.Entities;
 using Flierefluiter.Domain.Concrete;
 using Flierefluiter.Reception.Models;
 using System.Data.Entity;
-using Flierefluiter.WebUI.Models;
 
 namespace Flierefluiter.WebUI.Controllers
 {

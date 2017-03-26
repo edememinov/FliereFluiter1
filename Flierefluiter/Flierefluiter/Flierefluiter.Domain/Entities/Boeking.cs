@@ -13,6 +13,9 @@ namespace Flierefluiter.Domain.Entities
         [HiddenInput(DisplayValue = false)]
         [Key]
         public int? BoekingID { get; set; }
+        public String Naam { get; set; }
+        public String Email { get; set; }
+        public int? Telnr { get; set; }
         public String Adres { get; set; }
         public String Postcode { get; set; }
         public String Woonplaats { get; set; }
@@ -28,6 +31,9 @@ namespace Flierefluiter.Domain.Entities
         public DateTime? EindDatum { get; set; }
         public virtual Reservering Reservering {get; set;}
         public virtual Plaats Plaats { get; set; }
+        public int? PlaatsId { get; set; }
+        public int? VeldID { get; set; }
+        public int AantalPersonen { get; set; }
 
     }
 }

@@ -297,6 +297,9 @@ namespace Flierefluiter.Reception.Controllers
             return View(new SendCodeViewModel { Providers = factorOptions, ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
 
+
+
+
         //
         // POST: /Account/SendCode
         [HttpPost]

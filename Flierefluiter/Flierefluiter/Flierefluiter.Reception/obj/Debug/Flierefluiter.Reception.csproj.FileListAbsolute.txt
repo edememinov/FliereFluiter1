@@ -273,3 +273,6 @@ C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\F
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.csproj.GenerateResource.Cache
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.dll
 C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.pdb
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.Migrations.initial1.resources
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.Migrations.initial2.resources
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Reception\obj\Debug\Flierefluiter.Reception.Migrations.initial3.resources

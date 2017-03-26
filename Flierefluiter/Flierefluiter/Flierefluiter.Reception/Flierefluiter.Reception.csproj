@@ -192,8 +192,21 @@
     <Compile Include="Migrations\201703252144351_initial.Designer.cs">
       <DependentUpon>201703252144351_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703261141077_initial1.cs" />
+    <Compile Include="Migrations\201703261141077_initial1.Designer.cs">
+      <DependentUpon>201703261141077_initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703261156342_initial2.cs" />
+    <Compile Include="Migrations\201703261156342_initial2.Designer.cs">
+      <DependentUpon>201703261156342_initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703261245147_initial3.cs" />
+    <Compile Include="Migrations\201703261245147_initial3.Designer.cs">
+      <DependentUpon>201703261245147_initial3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BoekingViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ReserveringModel.cs" />
@@ -277,6 +290,7 @@
     <Content Include="Views\Bezoeker\PlaatsToevoegen.cshtml" />
     <Content Include="Views\Bezoeker\ReserveringSucces.cshtml" />
     <Content Include="Views\Bezoeker\VeldToevoegen.cshtml" />
+    <Content Include="Views\Boeking\ReserveringList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -296,6 +310,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703252144351_initial.resx">
       <DependentUpon>201703252144351_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703261141077_initial1.resx">
+      <DependentUpon>201703261141077_initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703261156342_initial2.resx">
+      <DependentUpon>201703261156342_initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703261245147_initial3.resx">
+      <DependentUpon>201703261245147_initial3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
