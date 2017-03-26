@@ -15,7 +15,7 @@ namespace Flierefluiter.WebUI.Controllers
     public class BezoekerController : Controller
     {
 
-        private EFDbContext db = new EFDbContext();
+        private DefaultConnection db = new DefaultConnection();
         private IFlierefluiterRepository repository;
         List<int?> idList = new List<int?>();
 

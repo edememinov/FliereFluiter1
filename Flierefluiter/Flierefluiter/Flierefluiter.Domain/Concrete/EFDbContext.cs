@@ -8,7 +8,7 @@ using Flierefluiter.Domain.Entities;
 
 namespace Flierefluiter.Domain.Concrete
 {
-    public class EFDbContext : DbContext { 
+    public class DefaultConnection : DbContext { 
         public DbSet<Reservering> Reserverings { get; set; }
         public DbSet<Veld> Velds { get; set; }
         public DbSet<Plaats> Plaatss { get; set; }

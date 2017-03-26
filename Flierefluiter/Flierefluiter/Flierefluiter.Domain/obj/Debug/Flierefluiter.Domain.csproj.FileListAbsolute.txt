@@ -70,3 +70,25 @@ C:\Users\Edem\Desktop\Avans .Net\flierefluiter\Flierefluiter\Flierefluiter\Flier
 C:\Users\Edem\Desktop\Avans .Net\flierefluiter\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.dll
 C:\Users\Edem\Desktop\Avans .Net\flierefluiter\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.pdb
 C:\Users\Edem\Desktop\Avans .Net\flierefluiter\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\Flierefluiter.Domain.dll.config
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\Flierefluiter.Domain.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\Flierefluiter.Domain.pdb
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.dll
+C:\Users\Edem\Desktop\Flierefluiter\FliereFluiter1\Flierefluiter\Flierefluiter\Flierefluiter.Domain\obj\Debug\Flierefluiter.Domain.pdb

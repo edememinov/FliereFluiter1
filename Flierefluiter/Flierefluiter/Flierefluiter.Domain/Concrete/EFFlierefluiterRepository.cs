@@ -10,7 +10,7 @@ namespace Flierefluiter.Domain.Concrete
 {
     public class EFFlierefluiterRepository : IFlierefluiterRepository
     {
-        private EFDbContext context = new EFDbContext();
+        private DefaultConnection context = new DefaultConnection();
         public IEnumerable<Reservering> Reserverings { 
             get { return context.Reserverings; } }
 

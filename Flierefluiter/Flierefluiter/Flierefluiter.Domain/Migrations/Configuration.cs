@@ -5,7 +5,7 @@ namespace Flierefluiter.Domain.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Flierefluiter.Domain.Concrete.EFDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Flierefluiter.Domain.Concrete.DefaultConnection>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@ namespace Flierefluiter.Domain.Migrations
             ContextKey = "Flierefluiter.Domain.Concrete.EFDbContext";
         }
 
-        protected override void Seed(Flierefluiter.Domain.Concrete.EFDbContext context)
+        protected override void Seed(Flierefluiter.Domain.Concrete.DefaultConnection context)
         {
             //  This method will be called after migrating to the latest version.
 

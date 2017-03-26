@@ -8,7 +8,7 @@ namespace Flierefluiter.Reception.Controllers
     public class BoekingController : Controller
     {
         // GET: Veld
-        private EFDbContext db = new EFDbContext();
+        private DefaultConnection db = new DefaultConnection();
         private IFlierefluiterRepository repository;
 
         public BoekingController(IFlierefluiterRepository repository)
