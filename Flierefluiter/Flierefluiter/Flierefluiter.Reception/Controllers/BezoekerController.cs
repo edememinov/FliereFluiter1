@@ -9,7 +9,7 @@ using Flierefluiter.Domain.Concrete;
 using Flierefluiter.Reception.Models;
 using System.Data.Entity;
 
-namespace Flierefluiter.WebUI.Controllers
+namespace Flierefluiter.Reception.Controllers
 {
     public class BezoekerController : Controller
     {
@@ -25,21 +25,23 @@ namespace Flierefluiter.WebUI.Controllers
 
         }
         [HttpGet]
-        public ActionResult PlaatsToevoegen()
+        public ActionResult PlaatsToevoegen(PlaatsenViewModel plaatsen)
         {
-            return View();
+            plaatsen.PlaatsVeld = repository.Velds;
+            return View(plaatsen);
         }
 
         [HttpPost]
-        public ActionResult PlaatsToevoegen(Plaats plaats)
+        [ActionName("PlaatsToevoegen")]
+        public ActionResult PlaatsToevoegenPost(PlaatsenViewModel plaatsen)
         {
            Plaats place = new Plaats
            {
-               Bezet = plaats.Bezet,
-               NaamPlaats = plaats.NaamPlaats,
-               PlaatsID = plaats.PlaatsID,
-               PrijsStandaard = plaats.PrijsStandaard,
-               VeldID = plaats.VeldID,
+               Bezet = plaatsen.Plek.Bezet,
+               NaamPlaats = plaatsen.Plek.NaamPlaats,
+               PlaatsID = plaatsen.Plek.PlaatsID,
+               PrijsStandaard = plaatsen.Plek.PrijsStandaard,
+               VeldID = plaatsen.Plek.VeldID,
 
            };
 
