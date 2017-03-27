@@ -2,7 +2,7 @@
 @model ReserveringModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "ReserveringToevoegen";
 }
 
 <h2>Reservering toevoegen</h2>
@@ -37,29 +37,30 @@
         </div>
     </div>
 
+    <div class="form-group">
+        @Html.LabelFor(model => model.Reservering.EindDatum, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Reservering.EindDatum, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Reservering.EindDatum, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
         <div class="form-group">
-            @Html.LabelFor(model => model.Reservering.EindDatum, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Reservering.AantalPersonen, "Aantal personen", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Reservering.EindDatum, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Reservering.EindDatum, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.Reservering.AantalPersonen)
             </div>
         </div>
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.Reservering.AantalPersonen, "Aantal personen", htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Reservering.AantalPersonen)
+        <div class="form-group">
+            @Html.LabelFor(m => m.Reservering.PlaatsId, "Plaats", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Reservering.PlaatsId, new SelectList(Model.Plaatsen, "PlaatsId", "NaamPlaats"), "-Selecteer het gewenste Plaats-")
+            </div>
         </div>
-    </div>
 
-    <div class="form-group">
-        @Html.LabelFor(m => m.Reservering.PlaatsId, "Veld", htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.DropDownListFor(m => m.Reservering.VeldID, new SelectList (Model.Velden, "VeldId", "Naam"),"-Selecteer het gewenste Veld-")
-        </div>
-    </div>
-
-    <p>
-        <button type="submit">Reserveren</button>
-    </p>
+        <p>
+            <button type="submit">Reserveren</button>
+        </p>
 }

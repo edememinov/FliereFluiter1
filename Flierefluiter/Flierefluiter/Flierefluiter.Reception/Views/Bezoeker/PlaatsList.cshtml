@@ -1,0 +1,50 @@
+﻿@model Flierefluiter.Reception.Models.BoekingViewModel
+
+@{
+    ViewBag.Title = "PlaatsList";
+}
+@using (Html.BeginForm("ListEmptySpot", "Bezoeker", FormMethod.Post))
+{
+<h2>PlaatsList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "VeldToevoegen")
+
+    @Html.Editor("endDate")
+    @Html.Editor("beginDate")
+    <input type="submit" value="Zoeken" />
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Plaatsen.First().NaamPlaats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plaatsen.First().PrijsStandaard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Plaatsen.First().VeldID)
+        </th>
+    </tr>
+
+@foreach (var item in Model.Plaatsen)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NaamPlaats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrijsStandaard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VeldID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditPlaats", new { id = item.PlaatsID }) |
+            @Html.ActionLink("Delete", "DeletePlaats", new { id = item.PlaatsID })
+        </td>
+    </tr>
+}
+
+</table>
+}

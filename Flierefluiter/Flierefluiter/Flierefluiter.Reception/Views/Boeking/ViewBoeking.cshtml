@@ -1,0 +1,122 @@
+﻿@model Flierefluiter.Reception.Models.BoekingViewModel
+
+@{
+    ViewBag.Title = "ViewBoeking";
+}
+
+<h2>Bekijk Boeking</h2>
+
+<div>
+    <h4>Boeking</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Plaats.NaamPlaats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Plaats.NaamPlaats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Naam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Naam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Telnr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Telnr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Postcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Postcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Woonplaats)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Woonplaats)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Geboortedatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Geboortedatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.PaspoortID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.PaspoortID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.BeginDatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.BeginDatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.EindDatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.EindDatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.VeldID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.VeldID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.AantalPersonen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.AantalPersonen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Boeking.BoekingID }) |
+    @Html.ActionLink("Back to List", "BoekingList")
+</p>

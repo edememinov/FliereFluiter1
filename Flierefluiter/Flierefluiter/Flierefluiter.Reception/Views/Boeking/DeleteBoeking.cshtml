@@ -1,0 +1,72 @@
+﻿@model Flierefluiter.Reception.Models.BoekingViewModel
+@{
+    ViewBag.Title = "DeleteBoeking";
+}
+
+<h2>DeleteBoeking</h2>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Reservering</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Naam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Naam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.Telnr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.Telnr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.BeginDatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.BeginDatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.EindDatum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.EindDatum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boeking.AantalPersonen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boeking.AantalPersonen)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "BoekingList")
+        </div>
+    }
+</div>

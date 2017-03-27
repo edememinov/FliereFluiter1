@@ -1,0 +1,64 @@
+﻿@model Flierefluiter.Reception.Models.BoekingViewModel
+
+@{
+    ViewBag.Title = "BoekingList";
+}
+
+<h2>Lijst alle boekingen</h2>
+
+<p>
+    @Html.ActionLink("Boeking Aanmaken", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.Naam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.Telnr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.BeginDatum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.EindDatum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Boeking.AantalPersonen)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Boekings)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telnr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BeginDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EindDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AantalPersonen)
+            </td>
+            <td>
+                @Html.ActionLink("Aanpassen", "EditBoeking", new { id = item.BoekingID }) |
+                @Html.ActionLink("Boeking Bekijken", "ViewBoeking", new { id = item.BoekingID }) |
+                @Html.ActionLink("Verwijderen", "DeleteBoeking", new { id = item.BoekingID })
+            </td>
+        </tr>
+    }
+
+</table>

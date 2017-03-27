@@ -10,5 +10,8 @@ namespace Flierefluiter.Reception.Models
     {
         public Plaats Plek {get; set; }
         public IEnumerable<Veld> PlaatsVeld { get; set;} 
+
+        public Veld Veld { get; set; }
+        public IEnumerable<Veld> Velden { get; set; }
     }
 }

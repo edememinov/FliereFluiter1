@@ -4,10 +4,10 @@
     ViewBag.Title = "ReserveringList";
 }
 
-<h2>ReserveringList</h2>
+<h2>Lijst alle reserveringen</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Reservering Aanmaken", "Create")
 </p>
 <table class="table">
     <tr>
@@ -53,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.AantalPersonen)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ReserveringID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ReserveringID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ReserveringID })
+            @Html.ActionLink("Aanpassen", "EditReservation", new { id=item.ReserveringID }) |
+            @Html.ActionLink("Omzetten in een boeking", "AddBoeking", new { id=item.ReserveringID }) |
+            @Html.ActionLink("Verwijderen", "DeleteResView", new { id=item.ReserveringID })
         </td>
     </tr>
 }

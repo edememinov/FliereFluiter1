@@ -285,13 +285,24 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Boeking\Boeking.cshtml" />
+    <Content Include="Views\Boeking\BoekingList.cshtml" />
     <Content Include="Views\Bezoeker\GeenPlek.cshtml" />
     <Content Include="Views\Bezoeker\Index.cshtml" />
     <Content Include="Views\Bezoeker\PlaatsToevoegen.cshtml" />
     <Content Include="Views\Bezoeker\ReserveringSucces.cshtml" />
     <Content Include="Views\Bezoeker\VeldToevoegen.cshtml" />
     <Content Include="Views\Boeking\ReserveringList.cshtml" />
+    <Content Include="Views\Boeking\EditReservation.cshtml" />
+    <Content Include="Views\Boeking\AddBoeking.cshtml" />
+    <Content Include="Views\Boeking\DeleteResView.cshtml" />
+    <Content Include="Views\Boeking\DeleteBoeking.cshtml" />
+    <Content Include="Views\Boeking\EditBoeking.cshtml" />
+    <Content Include="Views\Boeking\ViewBoeking.cshtml" />
+    <Content Include="Views\Bezoeker\VeldList.cshtml" />
+    <Content Include="Views\Bezoeker\EditVeld.cshtml" />
+    <Content Include="Views\Bezoeker\PlaatsList.cshtml" />
+    <Content Include="Views\Bezoeker\ListEmptySpot.cshtml" />
+    <Content Include="Views\Bezoeker\ReserveringToevoegen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

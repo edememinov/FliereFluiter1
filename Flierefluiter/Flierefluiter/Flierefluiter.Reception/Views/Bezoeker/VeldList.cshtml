@@ -1,0 +1,80 @@
+﻿@model Flierefluiter.Reception.Models.PlaatsenViewModel
+
+@{
+    ViewBag.Title = "VeldList";
+}
+
+<h2>VeldList</h2>
+
+<p>
+    @Html.ActionLink("Nieuw Veld Aanmaken", "VeldToevoegen")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Naam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.TypePlaats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Oppervlak)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Amp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Wifi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Water)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.Riool)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.CAI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veld.PrijsPerDag)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Velden) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypePlaats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Oppervlak)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Wifi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Water)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Riool)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrijsPerDag)
+        </td>
+        <td>
+            @Html.ActionLink("Aanpassen", "EditVeld", new { id=item.VeldID }) |
+            @Html.ActionLink("Verwijderen", "DeleteVeld", new { id=item.VeldID })
+        </td>
+    </tr>
+}
+
+</table>

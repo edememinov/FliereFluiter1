@@ -16,5 +16,7 @@ namespace Flierefluiter.Reception.Models
         public IEnumerable<Reservering> Reserveringen {get; set;}
         public Veld GekozenVeld { get; set; }
         public Plaats GekozenPlaats { get; set; }
+        public Boeking Boeking { get; set; }
+        public IEnumerable<Boeking> Boekingen { get; set; }
     }
 }
